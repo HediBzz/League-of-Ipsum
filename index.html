@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>League of Ipsum</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="img/icon" href="img/faviconV2.ico">
+    <!-- <script src="copy.js"></script> -->
+    <link href="https://fonts.googleapis.com/css?family=Marcellus+SC" rel="stylesheet">
+
+</head>
+<body>
+    <img src="img/LoL_Logo_Flat_WHITE.svg" id="logo">
+    <img src="img/LoL_Icon_Rendered_Hi-Res.png" id="icon">
+    <div class="form-horizontal">
+        <h1 class="text-center">League of Ipsum</h1>
+        <p class="text-center">A League of Legends-themed lorem ipsum generator</p>
+
+    </div>
+    <hr>
+    <form class="form-horizontal" id="ipsum">
+        <div class="control-group">
+            <label class="control-label" for="paragraph">Paragraphs:</label>
+            <div class="controls">
+                <input type="number" name="num-paragraphs" style="width: 40px;" value="3" max="100" min="1" />
+                
+            </div>
+            <label class="control-label" for="paragraph">Sentences:</label>
+            <div class="controls">
+                <input type="number" name="num-sentences" style="width: 40px;" value="3" max="100" min="1" />
+
+            </div>
+
+        </div>
+                <input type="submit" class="btn" value="GO!">
+                <button id="copy-button" class="btn">Copy text</button>
+
+
+    </form>
+    <hr>
+    <div id="generated">
+    </div>
+        <script src="script.js"></script>
+
+</body>
+</html>
