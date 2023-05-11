@@ -87,6 +87,7 @@ p {
 }
 .control-group .control-label {
   margin-right: 5px;
+  font-size: 1.2em;
 }
 .control-group .controls {
   margin-right: 1%;
@@ -143,6 +144,7 @@ input {
   text-align: start;
   margin-left: 5%;
   margin-right: 5%;
+  font-size: 1.1em;
 }
 
 hr {

@@ -1,4 +1,6 @@
-jQuery(document).ready(function($) {
+var copy = "";
+
+jQuery(document).ready(function ($) {
   // Initialize ipsum
   var generated = $("#generated");
   var league = ["Draven",
@@ -298,8 +300,7 @@ jQuery(document).ready(function($) {
 "ff",
 "summoner rift",
 "ms",
-    "build"];
-  var generatedText = "";
+"build"];
   
  var generatedText = ""; // Variable pour stocker le texte généré
 
@@ -316,11 +317,10 @@ jQuery(document).ready(function($) {
   });
 
   $("#copy-button").click(function() {
-    // Get the text to copy
-    var copyText = generatedText; // Utiliser le texte généré stocké
+
 
     // Create a temporary textarea element
-    navigator.clipboard.writeText(copyText);
+    navigator.clipboard.writeText(copy);
 
     // Alert the copied text
     alert("Text copied !");
@@ -340,11 +340,10 @@ function ipsum(numParagraphs, phrases, startText, numS){
     var paragraph = "";
     var saveS = numS;
     var numS = Math.floor((numS * 2) + 5);
-    numS = saveS;
     for(var j = 0; j < numS; j++){
       // 15 - 20 words per sentence
       var sentence = "";
-      var numWords = Math.floor((Math.random()*315)+15);
+      var numWords = Math.floor((Math.random()* 10)+15);
       for(var k = 0; k < numWords; k++){
         var word = "";
         var wordNum = Math.floor(Math.random()*phrases.length);
@@ -365,6 +364,8 @@ function ipsum(numParagraphs, phrases, startText, numS){
       paragraph = paragraph + sentence;
       paragraph = paragraph + " ";
     }
+    numS = saveS;
+    copy = copy + paragraph + "\n \n";
     paragraph = "<p>" + paragraph + "</p>";
     text = text + paragraph;
   }
