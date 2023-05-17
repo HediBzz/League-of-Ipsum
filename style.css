@@ -13,11 +13,11 @@
 #icon {
   margin-top: -2%;
   position: absolute;
-  width: 7%;
+  width: 5%;
 }
 @media screen and (max-width: 1024px) {
   #icon {
-    width: 10%;
+    width: 7%;
   }
 }
 @media screen and (max-width: 768px) {

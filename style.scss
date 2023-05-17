@@ -13,9 +13,9 @@
 #icon{
     margin-top: -2%;
     position: absolute;
-    width: 7%;
+    width: 5%;
     @media  screen and (max-width:1024px){
-        width:10%;
+        width:7%;
     }
     @media screen and (max-width:768px) {
         display: none;
@@ -57,7 +57,7 @@ p{
 }
 
 .form-horizontal{
-            text-align: center;
+    text-align: center;
 }
 .control-group{
     display: flex;
